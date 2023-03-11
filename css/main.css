@@ -1,23 +1,36 @@
 /*VARIABLES*/
-/*$box-model-slider: 0;*/
 /*MIXINS*/
-/*VARIABLES*/
-/*$box-model-slider: 0;*/
-/*MIXINS*/
-/*MEDIA QUERIES*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+@keyframes fade {
+  0% {
+    width: 40%;
+    opacity: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/*VARIABLES*/
+/*MIXINS*/
+/*MEDIA QUERIES*/
 @media (max-width: 1024px) {
   header {
     animation-name: none;
   }
 }
+
 @media (min-width: 1024px) {
   header {
     animation-name: fade;
     animation-duration: 4.5s;
   }
 }
+
 /*ELEMENTOS COMUNES*/
 * {
   font-family: "Playfair Display", serif;
@@ -40,16 +53,6 @@ header {
   margin-bottom: 2%;
 }
 
-@keyframes fade {
-  0% {
-    width: 40%;
-    opacity: 0;
-  }
-  100% {
-    width: 100%;
-    opacity: 1;
-  }
-}
 nav {
   border: solid;
   color: black;
@@ -60,12 +63,14 @@ nav {
   background-color: antiquewhite;
   padding-left: 0%;
 }
+
 nav a {
   border-bottom: solid;
   border-color: black;
   font-size: large;
   color: black;
 }
+
 nav #social {
   border-bottom: none;
 }
@@ -90,24 +95,21 @@ footer {
   flex-direction: row;
   justify-content: space-around;
 }
+
 footer i {
   font-size: xx-large;
 }
+
 footer #insta {
   color: black;
 }
+
 footer #whatsapp {
   color: #25D366;
 }
+
 footer #face {
   color: #3b5998;
-}
-
-/*SLIDER*/
-#imgs {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 
 /*RESERVAS*/
@@ -120,9 +122,11 @@ form {
   box-shadow: 0px -1px 12px -2px rgba(0, 0, 0, 0.75) 0px -1px 12px -2px rgba(0, 0, 0, 0.75) 0px -1px 12px -2px rgba(0, 0, 0, 0.75);
   background-color: antiquewhite;
 }
+
 form #boton-one:hover {
   border: solid;
 }
+
 form label {
   font-weight: bolder;
 }
@@ -156,10 +160,6 @@ p {
 #blured-two {
   padding: 2%;
   background-color: rgba(240, 234, 221, 0.5);
-}
-
-#casa-do-cafe {
-  border: solid;
 }
 
 /*CONTACTANOS*/

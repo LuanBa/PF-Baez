@@ -1,4 +1,5 @@
 @import 'estilos';
+@import 'keyframes';
 @import 'media';
 
 
@@ -20,18 +21,6 @@ header {
     @include estilo-CajasPrimarias;
     height: 85%;
     margin-bottom: 2%;
-}
-
-@keyframes fade {
-    0% {
-        width: 40%;
-        opacity: 0;
-    }
-
-    100% {
-        width: 100%;
-        opacity: 1;
-    }
 }
 
 nav {
@@ -83,14 +72,6 @@ footer {
     }
 }
 
-/*SLIDER*/
-
-#imgs {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
 /*RESERVAS*/
 
 form {
@@ -103,7 +84,6 @@ form {
     label {
         font-weight: bolder;
     }
-
 }
 
 #blured-three {
@@ -136,10 +116,6 @@ p {
 
 #blured-two {
     @include fondo-textos-forms
-}
-
-#casa-do-cafe {
-    border: solid;
 }
 
 /*CONTACTANOS*/
