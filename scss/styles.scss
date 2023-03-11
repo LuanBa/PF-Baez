@@ -86,15 +86,7 @@ form {
     }
 }
 
-#blured-three {
-    @include fondo-textos-forms
-}
-
 /*SOBRE NOSOTROS*/
-
-#blured-one {
-    @include fondo-textos-forms
-}
 
 p {
     font-size: large;
@@ -112,17 +104,9 @@ p {
     color: brown;
 }
 
-/*NUESTRA MATERIA PRIMA*/
 
-#blured-two {
-    @include fondo-textos-forms
-}
 
 /*CONTACTANOS*/
-
-#blured-four {
-    @include fondo-textos-forms
-}
 
 #boton-two:hover {
     border: solid;
