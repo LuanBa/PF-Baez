@@ -1,5 +1,5 @@
 @import 'estilos';
-
+@import 'media';
 
 
 /*ELEMENTOS COMUNES*/
@@ -20,10 +20,7 @@ header {
     @include estilo-CajasPrimarias;
     height: 85%;
     margin-bottom: 2%;
-    animation-name: fade;
-    animation-duration: 4.5s;
 }
-
 
 @keyframes fade {
     0% {
@@ -65,6 +62,9 @@ footer {
     border: solid;
     padding: 1%;
     margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
     i {
         font-size: xx-large;
@@ -150,14 +150,4 @@ p {
 
 #boton-two:hover {
     border: solid;
-}
-
-/*MEDIA QUERIES*/
-
-@media (max-width: 320px) {
-    header {
-        @include estilo-CajasPrimarias;
-        height: 85%;
-        margin-bottom: 2%;
-    }
 }

@@ -1,0 +1,19 @@
+@import 'estilos';
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1024px) {
+    header {
+        animation-name: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        animation-name: fade;
+        animation-duration: 4.5s;
+    }
+}
+
+
+
